@@ -1,9 +1,5 @@
 /* -----------------------------------------------------------
-This example shows a lot of different features. As configured here
-it'll check for a good GPS fix every 10 minutes and publish that data
-if there is one. If not, it'll save you data by staying quiet. It also
-registers 3 Particle.functions for changing whether it publishes,
-reading the battery level, and manually requesting a GPS reading.
+This program is heavily modified from the 3G Tracker example
 ---------------------------------------------------------------*/
 
 // Getting the library
@@ -19,7 +15,7 @@ int transmittingData = 1;
 unsigned long lastPublish = 0;
 
 // How many minutes between publishes? 10+ recommended for long-time continuous publishing!
-unsigned long delaySeconds = 10*60;
+unsigned long delaySeconds = 5*60;
 
 //
 float maxAlt = 4000.0;
